@@ -1,0 +1,76 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "appliesTo": "*",
+      "args": [
+        "ninja",
+        "flash"
+      ],
+      "command": "${env.COMSPEC}",
+      "externalConsole": true,
+      "taskLabel": "Flash",
+      "contextType": "build",
+      "taskName": "task-ninja-flash",
+      "type": "launch",
+      "workingDirectory": "${workspaceRoot}\\build"
+    },
+    {
+      "appliesTo": "*",
+      "args": [
+        "ninja",
+        "clean"
+      ],
+      "command": "${env.COMSPEC}",
+      "externalConsole": true,
+      "taskLabel": "Clean",
+      "contextType": "clean",
+      "taskName": "task-ninja-clean",
+      "type": "launch",
+      "workingDirectory": "${workspaceRoot}\\build"
+    },
+    {
+      "appliesTo": "*",
+      "args": [
+        "ninja",
+        "menuconfig"
+      ],
+      "command": "${env.COMSPEC}",
+      "externalConsole": true,
+      "taskLabel": "Menuconfig",
+      "contextType": "custom",
+      "taskName": "task-ninja-menuconfig",
+      "type": "launch",
+      "workingDirectory": "${workspaceRoot}\\build"
+    },
+    {
+      "appliesTo": "*",
+      "args": [
+        "ninja",
+        "monitor"
+      ],
+      "command": "${env.COMSPEC}",
+      "externalConsole": true,
+      "taskLabel": "Monitor",
+      "contextType": "custom",
+      "taskName": "task-ninja-monitor",
+      "type": "launch",
+      "workingDirectory": "${workspaceRoot}\\build"
+    },
+    {
+      "taskLabel": "task-CMakeLists",
+      "appliesTo": "CMakeLists.txt",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-CMakeLists",
+      "appliesTo": "CMakeLists.txt",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-CMakeLists",
+      "appliesTo": "CMakeLists.txt",
+      "type": "launch"
+    }
+  ]
+}
